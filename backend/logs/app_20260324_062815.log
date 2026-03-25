@@ -1,0 +1,99 @@
+2026-03-24 06:28:15,560 - main - INFO - === Logging system initialized ===
+2026-03-24 06:28:15,560 - main - INFO - Log file: logs/app_20260324_062815.log
+2026-03-24 06:28:15,560 - main - INFO - Log level: INFO
+2026-03-24 06:28:15,560 - main - INFO - Timestamp: 20260324_062815
+2026-03-24 06:28:16,552 - main - INFO - Included router: routers.aihub.router
+2026-03-24 06:28:16,598 - main - INFO - Included router: routers.article_reads.router
+2026-03-24 06:28:16,630 - main - INFO - Included router: routers.auth.router
+2026-03-24 06:28:16,635 - main - INFO - Included router: routers.health.router
+2026-03-24 06:28:16,661 - main - INFO - Included router: routers.settings.router
+2026-03-24 06:28:16,704 - main - INFO - Included router: routers.storage.router
+2026-03-24 06:28:16,719 - main - INFO - Included router: routers.user.router
+2026-03-24 06:28:16,721 - main - INFO - === Application startup initiated ===
+2026-03-24 06:28:16,721 - services.database - INFO - Ignore creating tables
+2026-03-24 06:28:16,722 - services.mock_data - INFO - Ignore initialize data
+2026-03-24 06:28:16,722 - services.auth - INFO - Ignore initialize admin
+2026-03-24 06:28:16,722 - main - INFO - === Application startup completed successfully ===
+2026-03-24 06:28:16,732 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 06:28:16,732 - core.database - WARNING - Database session maker not available, attempting lazy initialization...
+2026-03-24 06:28:16,732 - core.database - WARNING - Database not initialized, attempting lazy initialization...
+2026-03-24 06:28:16,732 - core.database - INFO - Starting database initialization...
+2026-03-24 06:28:16,732 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-03-24 06:28:16,732 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-24 06:28:16,733 - core.database - INFO - Creating async database engine...
+2026-03-24 06:28:16,734 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-03-24 06:28:17,146 - core.database - INFO - Database engine created successfully
+2026-03-24 06:28:17,146 - core.database - INFO - Creating async session maker...
+2026-03-24 06:28:17,146 - core.database - INFO - Async session maker created successfully
+2026-03-24 06:28:17,146 - core.database - INFO - Database connection initialized successfully
+2026-03-24 06:28:17,146 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-24 06:28:17,146 - core.database - INFO - 🔧 Starting table creation...
+2026-03-24 06:28:17,151 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 06:28:17,151 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-03-24 06:28:17,151 - routers.auth - INFO - [token/exchange] Received platform token exchange request
+2026-03-24 06:28:17,152 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-03-24 06:28:17,152 - routers.auth - DEBUG - [token/exchange] Verifying token with issuer: https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify
+2026-03-24 06:28:17,523 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-24 06:28:17,533 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7faf91a10a30>
+2026-03-24 06:28:17,533 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7faf91a05540> server_hostname='auth.atoms.dev' timeout=5.0
+2026-03-24 06:28:17,540 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7faf9247bac0>
+2026-03-24 06:28:17,541 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-03-24 06:28:17,541 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-03-24 06:28:17,541 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-03-24 06:28:17,542 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-03-24 06:28:17,542 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-03-24 06:28:17,563 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 24 Mar 2026 13:28:17 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-response-time', b'0.001s'), (b'x-request-id', b'b6b70ce2d6ab8fe4dcb0edcca9fbad07'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9e1604a5abbe1e08-LAX')])
+2026-03-24 06:28:17,564 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify "HTTP/1.1 200 OK"
+2026-03-24 06:28:17,564 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-03-24 06:28:17,565 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-03-24 06:28:17,565 - httpcore.http11 - DEBUG - response_closed.started
+2026-03-24 06:28:17,566 - httpcore.http11 - DEBUG - response_closed.complete
+2026-03-24 06:28:17,566 - httpcore.connection - DEBUG - close.started
+2026-03-24 06:28:17,566 - httpcore.connection - DEBUG - close.complete
+2026-03-24 06:28:17,566 - routers.auth - DEBUG - [token/exchange] Issuer response status: 200
+2026-03-24 06:28:17,567 - routers.auth - DEBUG - [token/exchange] Issuer response body: {'success': True, 'data': {'exp': 1776937554, 'user_id': 1048583, 'email': 'gabineteamediar@gmail.com', 'pv': 1}, 'message': 'Platform token verified', 'code': 0, 'timestamp': '2026-03-24T13:28:17.561999'}
+2026-03-24 06:28:17,567 - routers.auth - INFO - [token/exchange] Token verified, platform_user_id=1048583, email=gabineteamediar@gmail.com
+2026-03-24 06:28:17,567 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-03-24 06:28:17,567 - routers.auth - INFO - [token/exchange] Admin user verified, issuing admin token without DB persistence
+2026-03-24 06:28:17,569 - routers.auth - DEBUG - [token/exchange] Admin user object for token issuance: id=1048583, email=gabineteamediar@gmail.com, role=admin
+2026-03-24 06:28:17,569 - core.config - DEBUG - Read dynamic attribute jwt_expire_minutes from environment variable JWT_EXPIRE_MINUTES
+2026-03-24 06:28:17,569 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-03-24 06:28:17,570 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-03-24 06:28:17,625 - core.auth - DEBUG - Authentication token created for user hash: 76e0406d
+2026-03-24 06:28:17,626 - routers.auth - INFO - [token/exchange] Token issued successfully for user_id=1048583, expires_at=2026-04-23 13:28:17.569905+00:00
+2026-03-24 06:28:17,626 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4753s
+2026-03-24 06:28:18,984 - core.database - INFO - Tables initialized successfully
+2026-03-24 06:28:18,984 - core.database - DEBUG - [DB_OP] Create tables completed in 1.8380s
+2026-03-24 06:28:19,051 - core.database - INFO - Lazy database initialization completed successfully
+2026-03-24 06:28:19,051 - core.database - DEBUG - [DB_OP] Database session created successfully in 2.3195s
+2026-03-24 06:28:19,051 - routers.auth - INFO - [token/exchange] Received platform token exchange request
+2026-03-24 06:28:19,051 - routers.auth - DEBUG - [token/exchange] Verifying token with issuer: https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify
+2026-03-24 06:28:19,081 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-03-24 06:28:19,099 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7faf91b1a1a0>
+2026-03-24 06:28:19,100 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7faf91997ac0> server_hostname='auth.atoms.dev' timeout=5.0
+2026-03-24 06:28:19,109 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7faf91b1b8b0>
+2026-03-24 06:28:19,109 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-03-24 06:28:19,110 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-03-24 06:28:19,110 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-03-24 06:28:19,110 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-03-24 06:28:19,111 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-03-24 06:28:19,138 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 24 Mar 2026 13:28:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-response-time', b'0.001s'), (b'x-request-id', b'd4b77dab71c35ec34bc2d9b217f90484'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9e1604af7fd50ff3-LAX')])
+2026-03-24 06:28:19,139 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify "HTTP/1.1 200 OK"
+2026-03-24 06:28:19,140 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-03-24 06:28:19,140 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-03-24 06:28:19,140 - httpcore.http11 - DEBUG - response_closed.started
+2026-03-24 06:28:19,141 - httpcore.http11 - DEBUG - response_closed.complete
+2026-03-24 06:28:19,141 - httpcore.connection - DEBUG - close.started
+2026-03-24 06:28:19,141 - httpcore.connection - DEBUG - close.complete
+2026-03-24 06:28:19,141 - routers.auth - DEBUG - [token/exchange] Issuer response status: 200
+2026-03-24 06:28:19,142 - routers.auth - DEBUG - [token/exchange] Issuer response body: {'success': True, 'data': {'exp': 1776937554, 'user_id': 1048583, 'email': 'gabineteamediar@gmail.com', 'pv': 1}, 'message': 'Platform token verified', 'code': 0, 'timestamp': '2026-03-24T13:28:19.136196'}
+2026-03-24 06:28:19,142 - routers.auth - INFO - [token/exchange] Token verified, platform_user_id=1048583, email=gabineteamediar@gmail.com
+2026-03-24 06:28:19,142 - routers.auth - INFO - [token/exchange] Admin user verified, issuing admin token without DB persistence
+2026-03-24 06:28:19,142 - routers.auth - DEBUG - [token/exchange] Admin user object for token issuance: id=1048583, email=gabineteamediar@gmail.com, role=admin
+2026-03-24 06:28:19,143 - core.auth - DEBUG - Authentication token created for user hash: 76e0406d
+2026-03-24 06:28:19,143 - routers.auth - INFO - [token/exchange] Token issued successfully for user_id=1048583, expires_at=2026-04-23 13:28:19.142855+00:00
+2026-03-24 06:28:19,144 - core.database - DEBUG - [DB_OP] Database session cleanup after 2.4123s
+2026-03-24 06:28:19,236 - services.database - DEBUG - [DB_OP] Starting database close
+2026-03-24 06:28:19,305 - core.database - INFO - Database connection closed and engine disposed
+2026-03-24 06:28:19,305 - services.database - INFO - Database connections closed
+2026-03-24 06:28:19,305 - services.database - DEBUG - [DB_OP] Database close completed in 0.0694s

@@ -1,0 +1,58 @@
+2026-03-24 07:09:20,169 - main - INFO - === Logging system initialized ===
+2026-03-24 07:09:20,170 - main - INFO - Log file: logs/app_20260324_070920.log
+2026-03-24 07:09:20,170 - main - INFO - Log level: INFO
+2026-03-24 07:09:20,170 - main - INFO - Timestamp: 20260324_070920
+2026-03-24 07:09:20,930 - main - INFO - Included router: routers.aihub.router
+2026-03-24 07:09:20,977 - main - INFO - Included router: routers.article_reads.router
+2026-03-24 07:09:20,990 - main - INFO - Included router: routers.article_reads_custom.router
+2026-03-24 07:09:21,013 - main - INFO - Included router: routers.auth.router
+2026-03-24 07:09:21,035 - main - INFO - Included router: routers.health.router
+2026-03-24 07:09:21,062 - main - INFO - Included router: routers.settings.router
+2026-03-24 07:09:21,109 - main - INFO - Included router: routers.storage.router
+2026-03-24 07:09:21,119 - main - INFO - Included router: routers.user.router
+2026-03-24 07:09:21,120 - main - INFO - === Application startup initiated ===
+2026-03-24 07:09:21,120 - services.database - INFO - Ignore creating tables
+2026-03-24 07:09:21,121 - services.mock_data - INFO - Ignore initialize data
+2026-03-24 07:09:21,121 - services.auth - INFO - Ignore initialize admin
+2026-03-24 07:09:21,121 - main - INFO - === Application startup completed successfully ===
+2026-03-24 07:09:25,070 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:09:25,070 - core.database - WARNING - Database session maker not available, attempting lazy initialization...
+2026-03-24 07:09:25,071 - core.database - WARNING - Database not initialized, attempting lazy initialization...
+2026-03-24 07:09:25,071 - core.database - INFO - Starting database initialization...
+2026-03-24 07:09:25,071 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-03-24 07:09:25,071 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-24 07:09:25,072 - core.database - INFO - Creating async database engine...
+2026-03-24 07:09:25,072 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-03-24 07:09:25,167 - core.database - INFO - Database engine created successfully
+2026-03-24 07:09:25,167 - core.database - INFO - Creating async session maker...
+2026-03-24 07:09:25,167 - core.database - INFO - Async session maker created successfully
+2026-03-24 07:09:25,168 - core.database - INFO - Database connection initialized successfully
+2026-03-24 07:09:25,168 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-24 07:09:25,168 - core.database - INFO - 🔧 Starting table creation...
+2026-03-24 07:09:26,467 - core.database - INFO - Tables initialized successfully
+2026-03-24 07:09:26,467 - core.database - DEBUG - [DB_OP] Create tables completed in 1.2994s
+2026-03-24 07:09:26,527 - core.database - INFO - Lazy database initialization completed successfully
+2026-03-24 07:09:26,528 - core.database - DEBUG - [DB_OP] Database session created successfully in 1.4577s
+2026-03-24 07:09:26,947 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.8769s
+2026-03-24 07:09:31,909 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:09:31,909 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-03-24 07:09:32,451 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5419s
+2026-03-24 07:11:48,477 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:11:48,478 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-03-24 07:11:48,777 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2999s
+2026-03-24 07:18:28,759 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:18:28,760 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0009s
+2026-03-24 07:18:29,180 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4211s
+2026-03-24 07:19:25,761 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:19:25,762 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0008s
+2026-03-24 07:19:26,062 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3010s
+2026-03-24 07:19:56,331 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:19:56,331 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-03-24 07:19:56,668 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3374s
+2026-03-24 07:19:56,725 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:19:56,725 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-03-24 07:19:57,347 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6222s
+2026-03-24 07:20:33,198 - services.database - DEBUG - [DB_OP] Starting database close
+2026-03-24 07:20:33,327 - core.database - INFO - Database connection closed and engine disposed
+2026-03-24 07:20:33,328 - services.database - INFO - Database connections closed
+2026-03-24 07:20:33,328 - services.database - DEBUG - [DB_OP] Database close completed in 0.1295s

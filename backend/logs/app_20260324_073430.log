@@ -1,0 +1,40 @@
+2026-03-24 07:34:30,947 - main - INFO - === Logging system initialized ===
+2026-03-24 07:34:30,948 - main - INFO - Log file: logs/app_20260324_073430.log
+2026-03-24 07:34:30,948 - main - INFO - Log level: INFO
+2026-03-24 07:34:30,948 - main - INFO - Timestamp: 20260324_073430
+2026-03-24 07:34:31,767 - main - INFO - Included router: routers.aihub.router
+2026-03-24 07:34:31,814 - main - INFO - Included router: routers.article_reads.router
+2026-03-24 07:34:31,822 - main - INFO - Included router: routers.article_reads_custom.router
+2026-03-24 07:34:31,843 - main - INFO - Included router: routers.auth.router
+2026-03-24 07:34:31,846 - main - INFO - Included router: routers.health.router
+2026-03-24 07:34:31,867 - main - INFO - Included router: routers.settings.router
+2026-03-24 07:34:31,906 - main - INFO - Included router: routers.storage.router
+2026-03-24 07:34:31,915 - main - INFO - Included router: routers.user.router
+2026-03-24 07:34:31,916 - main - INFO - === Application startup initiated ===
+2026-03-24 07:34:31,916 - services.database - INFO - Ignore creating tables
+2026-03-24 07:34:31,916 - services.mock_data - INFO - Ignore initialize data
+2026-03-24 07:34:31,917 - services.auth - INFO - Ignore initialize admin
+2026-03-24 07:34:31,917 - main - INFO - === Application startup completed successfully ===
+2026-03-24 07:34:35,376 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-24 07:34:35,376 - core.database - WARNING - Database session maker not available, attempting lazy initialization...
+2026-03-24 07:34:35,376 - core.database - WARNING - Database not initialized, attempting lazy initialization...
+2026-03-24 07:34:35,376 - core.database - INFO - Starting database initialization...
+2026-03-24 07:34:35,376 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-03-24 07:34:35,377 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-24 07:34:35,377 - core.database - INFO - Creating async database engine...
+2026-03-24 07:34:35,378 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-03-24 07:34:35,537 - core.database - INFO - Database engine created successfully
+2026-03-24 07:34:35,537 - core.database - INFO - Creating async session maker...
+2026-03-24 07:34:35,537 - core.database - INFO - Async session maker created successfully
+2026-03-24 07:34:35,537 - core.database - INFO - Database connection initialized successfully
+2026-03-24 07:34:35,537 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-24 07:34:35,537 - core.database - INFO - 🔧 Starting table creation...
+2026-03-24 07:34:36,864 - core.database - INFO - Tables initialized successfully
+2026-03-24 07:34:36,864 - core.database - DEBUG - [DB_OP] Create tables completed in 1.3266s
+2026-03-24 07:34:36,924 - core.database - INFO - Lazy database initialization completed successfully
+2026-03-24 07:34:36,925 - core.database - DEBUG - [DB_OP] Database session created successfully in 1.5489s
+2026-03-24 07:34:37,351 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.9750s
+2026-03-24 07:45:12,280 - services.database - DEBUG - [DB_OP] Starting database close
+2026-03-24 07:45:12,280 - core.database - INFO - Database connection closed and engine disposed
+2026-03-24 07:45:12,281 - services.database - INFO - Database connections closed
+2026-03-24 07:45:12,281 - services.database - DEBUG - [DB_OP] Database close completed in 0.0010s

@@ -1,0 +1,24 @@
+{
+    "title": "article_reads",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "article_id": {
+            "type": "string",
+            "description": "Unique article identifier matching frontend article IDs"
+        },
+        "read_count": {
+            "type": "integer",
+            "description": "Total number of reads for this article",
+            "default": 0
+        }
+    },
+    "required": [
+        "id",
+        "article_id",
+        "read_count"
+    ]
+}
