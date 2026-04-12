@@ -13,9 +13,13 @@ Fecha: abril 2026
 | `/og-image.jpg` | Imagen de previsualización social (1200×630 px, 84 KB) |
 | `app/index.html` | Copia de trabajo interna. NO es la que se publica. |
 
-## ⚠️ Regla crítica
-**Siempre editar `/index.html` (raíz), nunca `app/index.html`.**
-Commits anteriores fallaron porque Claude Code editaba `app/index.html` en lugar del archivo raíz.
+## Estructura del repo
+El repo git vive en la carpeta `app/` del entorno local.
+`app/index.html` ES el `index.html` raíz del repo — es el mismo archivo.
+GitHub Pages lo sirve como `https://mundosintropico.github.io/`.
+
+**Siempre editar `app/index.html` — es el único index.html que se publica.**
+Los archivos en `app/frontend/` y `app/frontend/dist/` son builds separados que no se publican.
 
 ## Cambios aplicados en v2
 
