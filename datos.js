@@ -594,6 +594,97 @@
 595	  <p><strong>El suicidio civilizacional no hace ruido.</strong></p>
 596	  `
 597	    }
-598	  ]
-599	}
-600	
+  ]
+},
+
+/* ── 5: El suicidio silencioso de las Civilizaciones ── */
+{
+  badge: 'DEMOGRAFÍA Y CIVILIZACIÓN',
+  badgeClass: 'badge-law',
+  title: 'El suicidio silencioso de las Civilizaciones',
+  subtitle: 'La demografía como destino: lo que nadie quiere calcular',
+  date: '2026',
+  capas: 5,
+  mins: 9,
+  views: 0,
+  layers: [
+    {
+      label: 'CAPA 01', labelClass: 'lbl-1',
+      title: 'La aritmética que nadie enseña', titleClass: 'c-cyan',
+      html: `
+        <p>El umbral de reemplazo generacional es <strong>2.1 hijos por mujer</strong>. Por debajo de ese nivel, una sociedad no se reproduce a sí misma. Es aritmética, no ideología.</p>
+        <div class="stats-row">
+          <div class="stat-card"><div class="stat-n c-cyan" data-target="72" data-suffix="%">0</div><div class="stat-label">de los países desarrollados están por debajo del umbral de reemplazo</div></div>
+          <div class="stat-card"><div class="stat-n c-red" data-target="0" data-suffix=".72">0</div><div class="stat-label">tasa de fertilidad de Corea del Sur — mínimo histórico global registrado</div></div>
+          <div class="stat-card"><div class="stat-n c-yellow" data-target="1" data-suffix=".16">0</div><div class="stat-label">tasa de fertilidad de España en 2023</div></div>
+          <div class="stat-card"><div class="stat-n c-red" data-target="50">0</div><div class="stat-label">años para que una sociedad con TFR=1.0 pierda el 25% de su población</div></div>
+        </div>
+        <div class="q-block q-red">"Las cifras no mienten. Solo incomodan."</div>
+      `
+    },
+    {
+      label: 'CAPA 02', labelClass: 'lbl-2',
+      title: 'Las variables que el modelo ignora', titleClass: 'c-yellow',
+      html: `
+        <p>Las proyecciones demográficas oficiales asumen convergencia hacia el reemplazo. Llevan décadas equivocándose en la misma dirección.</p>
+        <p>Lo que no entra en los modelos:</p>
+        <ul>
+          <li>El efecto estructural de la urbanización sobre la fertilidad</li>
+          <li>La correlación inversa entre nivel educativo y natalidad en economías avanzadas</li>
+          <li>El coste de oportunidad del hijo en economías de alto coste de vida</li>
+          <li>La ruptura del contrato intergeneracional en sistemas de pensiones deficitarios</li>
+        </ul>
+        <div class="q-block q-yellow">"Cuando los incentivos para procrear desaparecen, las cifras dicen la verdad antes que los políticos."</div>
+      `
+    },
+    {
+      label: 'CAPA 03', labelClass: 'lbl-3',
+      title: 'Quién sí se reproduce y por qué', titleClass: 'c-red',
+      html: `
+        <p>Hay comunidades que mantienen alta natalidad dentro del mundo moderno. Todas comparten una característica:</p>
+        <div class="q-block q-red">Tienen una respuesta operativa a la pregunta: ¿para qué existimos?</div>
+        <table class="two-col">
+          <tr><th>Comunidad</th><th>Tasa de fertilidad</th></tr>
+          <tr><td>Amish (EE.UU.)</td><td>6–7</td></tr>
+          <tr><td>Ultraortodoxos (Israel)</td><td>6–8</td></tr>
+          <tr><td>Níger</td><td>6.8</td></tr>
+          <tr><td>Media Unión Europea</td><td>1.46</td></tr>
+          <tr><td>Japón</td><td>1.20</td></tr>
+          <tr><td>Corea del Sur</td><td>0.72</td></tr>
+        </table>
+        <p>El factor diferencial no es económico. Es la existencia de un marco de sentido que trasciende al individuo.</p>
+      `
+    },
+    {
+      label: 'CAPA 04', labelClass: 'lbl-2',
+      title: 'El colapso como elección sistémica', titleClass: 'c-yellow',
+      html: `
+        <p>Las sociedades con colapso demográfico no están siendo destruidas desde fuera. Están tomando, de forma difusa y colectiva, la decisión de no continuar.</p>
+        <p>Los mecanismos estructurales:</p>
+        <ul>
+          <li>Sistemas educativos que retrasan la independencia hasta los 30 años</li>
+          <li>Mercados inmobiliarios que hacen la familia económicamente inaccesible</li>
+          <li>Culturas que penalizan socialmente la maternidad temprana</li>
+          <li>Estados de bienestar que sustituyen la función económica de los hijos</li>
+        </ul>
+        <div class="q-block q-yellow">"No es que no quieran hijos. Es que el sistema hace que tenerlos sea una decisión económicamente irracional."</div>
+      `
+    },
+    {
+      label: 'CAPA 05', labelClass: 'lbl-1',
+      title: 'Lo que viene cuando nadie viene', titleClass: 'c-cyan',
+      html: `
+        <p>Una sociedad que no se reproduce no desaparece de golpe. Se contrae durante generaciones, en silencio:</p>
+        <ul>
+          <li>Escuelas que cierran por falta de alumnos</li>
+          <li>Ciudades que encogen desde los barrios periféricos hacia adentro</li>
+          <li>Sistemas de pensiones que colapsan por insuficiencia de cotizantes</li>
+          <li>Culturas que dejan de transmitirse porque no hay quién las reciba</li>
+        </ul>
+        <p>El suicidio civilizacional no es un evento. Es un proceso lento, silencioso y estadísticamente inevitable si no se invierte la tendencia.</p>
+        <div class="q-block q-red">"Las civilizaciones no mueren con ruido. Mueren con aulas vacías y casas que nadie hereda."</div>
+      `
+    }
+  ]
+}
+];
