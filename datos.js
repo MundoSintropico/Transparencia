@@ -606,7 +606,7 @@
   date: '2026',
   capas: 5,
   mins: 9,
-  views: 0,
+  views: '0',
   layers: [
     {
       label: 'CAPA 01', labelClass: 'lbl-1',
