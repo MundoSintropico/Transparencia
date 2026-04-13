@@ -112,6 +112,10 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:r
 .next-btn:hover{background:rgba(0,245,255,.07);box-shadow:0 0 14px rgba(0,245,255,.2);}
 .next-btn.green{border-color:var(--green);color:var(--green);}
 .next-btn.green:hover{background:rgba(57,255,20,.07);box-shadow:0 0 14px rgba(57,255,20,.2);}
+.next-inv-block{margin-top:2rem;border-top:1px solid var(--dgray);padding-top:1.5rem;}
+.next-inv-label{font-family:'Space Mono',monospace;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:.8rem;}
+.next-inv-card{display:flex;align-items:center;gap:1rem;padding:.9rem 1rem;border:1px solid var(--dgray);cursor:pointer;transition:border-color .2s;}
+.next-inv-card:hover{border-color:var(--cyan);}
 
 /* ── FINAL ── */
 #final-section{max-width:700px;margin:2.5rem auto 0;padding:0 1.5rem;display:none;}
@@ -122,14 +126,6 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:r
 .share-btn{font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;padding:.55rem 1.1rem;cursor:pointer;border:1px solid rgba(255,255,255,0.25);background:transparent;color:rgba(255,255,255,0.75);transition:all .2s;}
 .share-btn:hover{color:var(--white);border-color:var(--white);}
 .share-btn.ok{color:var(--green);border-color:var(--green);}
-.email-block{border:1px solid var(--dgray);padding:1.3rem;margin-bottom:1.8rem;}
-.email-block label{display:block;font-family:'Space Mono',monospace;font-size:.57rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);margin-bottom:.7rem;}
-.email-row{display:flex;gap:.4rem;}
-.email-input{flex:1;background:rgba(26,26,46,.55);border:1px solid var(--dgray);padding:.65rem .9rem;font-family:'Space Mono',monospace;font-size:.68rem;color:var(--white);outline:none;transition:border-color .2s;}
-.email-input:focus{border-color:var(--cyan);}
-.email-input::placeholder{color:rgba(255,255,255,0.72);}
-.email-sub{background:var(--cyan);border:none;padding:.65rem 1.1rem;font-family:'Space Mono',monospace;font-size:.57rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bg);cursor:pointer;font-weight:700;transition:box-shadow .2s;}
-.email-sub:hover{box-shadow:0 0 14px rgba(0,245,255,.5);}
 .lightning-block{
   border:2px solid rgba(255,215,0,.55);
   padding:1.8rem;
@@ -347,7 +343,7 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:r
 <section id="screen-reader" class="hidden">
   <nav class="nav-bar">
     <span class="nav-logo" onclick="showHome()">● LO QUE NO VES</span>
-    <button class="nav-btn" onclick="showList()">≡ Investigaciones</button>
+    <button class="nav-btn" onclick="showList()">≡ Todas las investigaciones</button>
   </nav>
   <div class="reader-header">
     <span class="reader-badge" id="reader-badge"></span>
@@ -362,7 +358,7 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:r
   <div id="final-section">
     <div class="final-div">
       <p class="final-title">Esta investigación es libre. Tú decides su valor.</p>
-      <p class="final-sub">COMPÁRTELA · APÓYALA · SUSCRÍBETE</p>
+      <p class="final-sub">COMPÁRTELA · APÓYALA</p>
       <div class="share-row">
         <button class="share-btn" onclick="shareX()">𝕏 Twitter</button>
         <button class="share-btn" onclick="shareTG()">✈ Telegram</button>
@@ -391,15 +387,8 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:r
           </a>
         </div>
       </div>
-      <div class="email-block">
-        <label for="email-inp">Recibe la próxima investigación</label>
-        <p style="font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.12em;color:var(--gray);margin-bottom:.9rem;line-height:1.7;">Cada investigación, directa a tu inbox.<br>Sin algoritmos. Sin filtros.</p>
-        <div class="email-row">
-          <input id="email-inp" class="email-input" type="email" placeholder="tu@email.com">
-          <button class="email-sub" onclick="subscribeEmail()">Suscribirse</button>
-        </div>
-      </div>
       <div id="refs-container"></div>
+      <div id="next-inv-nav"></div>
     </div>
   </div>
 </section>
@@ -1106,6 +1095,26 @@ function goLayer(i) {
 function showFinal() {
   const fs = document.getElementById('final-section');
   fs.style.display = 'block';
+  const nextEl = document.getElementById('next-inv-nav');
+  if (nextEl) {
+    const next = curInv + 1;
+    if (next < investigations.length) {
+      const inv = investigations[next];
+      nextEl.innerHTML = `<div class="next-inv-block">
+        <p class="next-inv-label">Siguiente investigación</p>
+        <div class="next-inv-card" onclick="showReader(${next})">
+          <div class="inv-num">#0${next+1}</div>
+          <div style="flex:1">
+            <span class="inv-badge ${inv.badgeClass}">${inv.badge}</span>
+            <div class="inv-title" style="margin-top:.4rem">${inv.title}</div>
+          </div>
+          <div class="inv-arrow">›</div>
+        </div>
+      </div>`;
+    } else {
+      nextEl.innerHTML = `<button class="next-btn green" onclick="showList()" style="margin-top:2rem">≡ Ver todas las investigaciones →</button>`;
+    }
+  }
   setTimeout(() => fs.scrollIntoView({behavior:'smooth',block:'start'}), 80);
 }
 
