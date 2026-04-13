@@ -888,96 +888,174 @@ const investigations = [
   ]
 },
 
-/* ── 5: El suicidio silencioso de las Civilizaciones ── */
+/* ── 5: El Suicidio Silencioso de las Civilizaciones ── */
 {
-  badge: 'DEMOGRAFÍA Y CIVILIZACIÓN',
-  badgeClass: 'badge-law',
-  title: 'El suicidio silencioso de las Civilizaciones',
-  subtitle: 'La demografía como destino: lo que nadie quiere calcular',
-  date: '2026',
-  capas: 5,
-  mins: 9,
-  views: '0',
+  title: 'El Suicidio Silencioso de las Civilizaciones',
+  subtitle: 'Lo que no vemos: por qu&#xE9; unas culturas eligen vivir y otras eligen desaparecer',
+  date: '10-04-2026',
+  capas: 3,
+  mins: 14,
+  views: 0,
+  badge: 'DEMOGRAF&#xCD;A & PODER',
+  badgeClass: 'badge-privacy',
   layers: [
     {
       label: 'CAPA 01', labelClass: 'lbl-1',
-      title: 'La aritmética que nadie enseña', titleClass: 'c-cyan',
+      title: 'Los N&#xFA;meros que Nadie Quiere Leer', titleClass: 'c-cyan',
       html: `
-        <p>El umbral de reemplazo generacional es <strong>2.1 hijos por mujer</strong>. Por debajo de ese nivel, una sociedad no se reproduce a sí misma. Es aritmética, no ideología.</p>
-        <div class="stats-row">
-          <div class="stat-card"><div class="stat-n c-cyan" data-target="72" data-suffix="%">0</div><div class="stat-label">de los países desarrollados están por debajo del umbral de reemplazo</div></div>
-          <div class="stat-card"><div class="stat-n c-red" data-target="0" data-suffix=".72">0</div><div class="stat-label">tasa de fertilidad de Corea del Sur — mínimo histórico global registrado</div></div>
-          <div class="stat-card"><div class="stat-n c-yellow" data-target="1" data-suffix=".16">0</div><div class="stat-label">tasa de fertilidad de España en 2023</div></div>
-          <div class="stat-card"><div class="stat-n c-red" data-target="50">0</div><div class="stat-label">años para que una sociedad con TFR=1.0 pierda el 25% de su población</div></div>
+        <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" class="layer-header-img" style="background:#07070f;border:1px solid rgba(0,245,255,0.12);margin-bottom:1.6rem;">
+          <defs>
+            <filter id="glow-cy" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <filter id="glow-rd" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <linearGradient id="crv-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.7"/>
+              <stop offset="50%" stop-color="#ffe600" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#ff3060" stop-opacity="1"/>
+            </linearGradient>
+          </defs>
+          <line x1="60" y1="25" x2="60" y2="245" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <line x1="60" y1="245" x2="665" y2="245" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <text x="52" y="29" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="rgba(255,255,255,0.3)">4.0</text>
+          <text x="52" y="131" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="#00f5ff" opacity="0.7">2.1</text>
+          <text x="52" y="249" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="rgba(255,255,255,0.3)">0</text>
+          <text x="60" y="262" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="rgba(255,255,255,0.25)">1960</text>
+          <text x="231" y="262" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="rgba(255,255,255,0.25)">1980</text>
+          <text x="403" y="262" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="rgba(255,255,255,0.25)">2000</text>
+          <text x="600" y="262" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="rgba(255,255,255,0.25)">2023</text>
+          <line x1="60" y1="127" x2="665" y2="127" stroke="#00f5ff" stroke-width="1" stroke-dasharray="5,4" opacity="0.6" filter="url(#glow-cy)"/>
+          <text x="66" y="121" font-family="Space Mono,monospace" font-size="7.5" fill="#00f5ff" opacity="0.85" filter="url(#glow-cy)">TFR 2.1 &#x2192; umbral de reemplazo</text>
+          <path d="M 60,52 C 160,62 280,96 403,127 S 510,165 600,201 L 600,245 L 60,245 Z" fill="rgba(255,48,96,0.05)"/>
+          <path d="M 60,52 C 160,62 280,96 403,127 S 510,165 600,201" stroke="#ff3060" stroke-width="5" fill="none" opacity="0.2" filter="url(#glow-rd)"/>
+          <path d="M 60,52 C 160,62 280,96 403,127 S 510,165 600,201" stroke="url(#crv-grad)" stroke-width="2.5" fill="none"/>
+          <circle cx="60" cy="52" r="3" fill="#00f5ff" opacity="0.7"/>
+          <circle cx="403" cy="127" r="3" fill="#ffe600" opacity="0.8"/>
+          <circle cx="600" cy="201" r="5" fill="#ff3060" filter="url(#glow-rd)"/>
+          <text x="610" y="196" font-family="Space Mono,monospace" font-size="20" font-weight="bold" fill="#ff3060" filter="url(#glow-rd)">0.72</text>
+          <text x="612" y="212" font-family="Space Mono,monospace" font-size="7" fill="rgba(255,48,96,0.65)">COREA DEL SUR</text>
+          <g transform="translate(340,255)" opacity="0.15">
+            <path d="M -16,0 Q 0,-18 16,0" stroke="#00f5ff" stroke-width="1.5" fill="none"/>
+            <line x1="-18" y1="0" x2="18" y2="0" stroke="#00f5ff" stroke-width="1.5"/>
+            <line x1="-13" y1="0" x2="-15" y2="9" stroke="#00f5ff" stroke-width="1.5"/>
+            <line x1="13" y1="0" x2="15" y2="9" stroke="#00f5ff" stroke-width="1.5"/>
+          </g>
+          <text x="350" y="15" text-anchor="middle" font-family="Space Mono,monospace" font-size="7" letter-spacing="2" fill="rgba(255,255,255,0.2)">TASA DE FERTILIDAD TOTAL &#x2014; COLAPSO DEMOGR&#xC1;FICO GLOBAL</text>
+        </svg>
+
+        <div class="q-block">
+          " La civilizaci&#xF3;n occidental no est&#xE1; en decadencia. Ya est&#xE1; muerta. Lo que est&#xE1;s viviendo es el cad&#xE1;ver. <em>&#x2014; Oswald Spengler, La Decadencia de Occidente (1918)</em> "
         </div>
-        <div class="q-block q-red">"Las cifras no mienten. Solo incomodan."</div>
+
+        <p>En 1918, un maestro de escuela alem&#xE1;n estudi&#xF3; cada civilizaci&#xF3;n que hab&#xED;a colapsado y encontr&#xF3; que todas compart&#xED;an un rasgo en la fase final: <strong>la poblaci&#xF3;n deja de tener hijos. Y deja de tenerlos porque ya no ve el sentido.</strong> Su obra fue ridiculizada. Los n&#xFA;meros de hoy le dan la raz&#xF3;n.</p>
+
+        <p>El umbral de <strong>reemplazo generacional es 2.1 hijos por mujer.</strong> Todo lo que est&#xE9; por debajo es una civilizaci&#xF3;n que no se est&#xE1; reproduciendo a s&#xED; misma. No es opini&#xF3;n. Es aritm&#xE9;tica.</p>
+
+        <table class="two-col">
+          <tr><th>Pa&#xED;s / Comunidad</th><th>TFT</th></tr>
+          <tr><td>N&#xED;ger</td><td style="color:var(--green)">6.8</td></tr>
+          <tr><td>Jud&#xED;os ultraortodoxos</td><td style="color:var(--green)">6.6</td></tr>
+          <tr><td>Amish (EE.UU.)</td><td style="color:var(--green)">6.2</td></tr>
+          <tr><td>Afganist&#xE1;n</td><td style="color:var(--green)">4.6</td></tr>
+          <tr><td>Mormones practicantes</td><td style="color:var(--green)">3.3</td></tr>
+          <tr><td>Israel</td><td style="color:var(--cyan)">3.0</td></tr>
+          <tr><td style="color:var(--gray);font-style:italic">umbral de reemplazo</td><td style="color:var(--cyan);font-weight:700">2.1</td></tr>
+          <tr><td>Alemania</td><td style="color:var(--yellow)">1.46</td></tr>
+          <tr><td>Italia</td><td style="color:var(--yellow)">1.20</td></tr>
+          <tr><td>Jap&#xF3;n</td><td style="color:var(--yellow)">1.20</td></tr>
+          <tr><td>Espa&#xF1;a</td><td style="color:var(--red)">1.10</td></tr>
+          <tr><td><strong>Corea del Sur</strong></td><td style="color:var(--red);font-weight:700">0.72</td></tr>
+        </table>
+
+        <p>Corea del Sur ha invertido <strong>280.000 millones de d&#xF3;lares</strong> en incentivos pro-natalidad desde 2006. El resultado: la tasa de fertilidad baj&#xF3; de 1.08 a 0.72. <em>El problema no es econ&#xF3;mico. Es existencial.</em></p>
+
+        <div class="stats-row">
+          <div class="stat-card"><div class="stat-n c-red" data-target="72" data-suffix=" c&#xE9;n.">0</div><div class="stat-label">TFT de Corea del Sur &#x2014; el valor m&#xE1;s bajo jam&#xE1;s registrado en la historia humana</div></div>
+          <div class="stat-card"><div class="stat-n c-green" data-target="6" data-suffix=".2">0</div><div class="stat-label">hijos por mujer Amish &#x2014; sin electricidad, sin Estado, sin subsidios</div></div>
+          <div class="stat-card"><div class="stat-n c-cyan" data-target="280" data-suffix="B$">0</div><div class="stat-label">invertidos por Corea del Sur desde 2006 sin revertir la ca&#xED;da</div></div>
+          <div class="stat-card"><div class="stat-n c-yellow" data-target="42" data-suffix="%">0</div><div class="stat-label">de j&#xF3;venes coreanos menores de 34 que no quieren hijos bajo ninguna circunstancia</div></div>
+        </div>
+
+        <h3 class="c-cyan">El patr&#xF3;n que nadie nombra</h3>
+        <p>Las naciones con <strong>alta natalidad</strong> comparten algo que no es riqueza, tecnolog&#xED;a ni seguridad: <em>tienen una respuesta operativa a la pregunta "&#xBF;para qu&#xE9; estamos aqu&#xED;?"</em></p>
+        <p>Las naciones con <strong>natalidad en colapso</strong> comparten algo diferente: han respondido esa pregunta con silencio, o peor &#x2014; con el individuo como fin &#xFA;ltimo.</p>
+        <p><strong>Los Amish</strong> rechazan la electricidad, los autom&#xF3;viles y el seguro m&#xE9;dico estatal. No tienen guarder&#xED;as gratuitas ni licencias de paternidad. Y se duplican cada 20 a&#xF1;os. &#xBF;Por qu&#xE9;? Porque dentro de su cosmolog&#xED;a, un hijo no es un costo. Es la continuaci&#xF3;n de algo que los trasciende.</p>
+        <p><strong>Corea del Sur</strong> tiene una de las econom&#xED;as m&#xE1;s avanzadas del mundo. Y el 42% de sus j&#xF3;venes no quiere hijos bajo ninguna circunstancia. La respuesta recurrente no es econ&#xF3;mica. Es filos&#xF3;fica: <em>"Este mundo no es un lugar en el que valga la pena traer a alguien."</em></p>
       `
     },
     {
       label: 'CAPA 02', labelClass: 'lbl-2',
-      title: 'Las variables que el modelo ignora', titleClass: 'c-yellow',
+      title: 'El Mecanismo Oculto: Cuando el Individuo se Convierte en Horizonte &#xDA;ltimo', titleClass: 'c-yellow',
       html: `
-        <p>Las proyecciones demográficas oficiales asumen convergencia hacia el reemplazo. Llevan décadas equivocándose en la misma dirección.</p>
-        <p>Lo que no entra en los modelos:</p>
-        <ul>
-          <li>El efecto estructural de la urbanización sobre la fertilidad</li>
-          <li>La correlación inversa entre nivel educativo y natalidad en economías avanzadas</li>
-          <li>El coste de oportunidad del hijo en economías de alto coste de vida</li>
-          <li>La ruptura del contrato intergeneracional en sistemas de pensiones deficitarios</li>
-        </ul>
-        <div class="q-block q-yellow">"Cuando los incentivos para procrear desaparecen, las cifras dicen la verdad antes que los políticos."</div>
+        <p>Hay algo m&#xE1;s profundo que la econom&#xED;a, la pol&#xED;tica o la cultura superficial. Es una fractura en la arquitectura mental de las sociedades de baja natalidad.</p>
+
+        <h3 class="c-cyan">La privatizaci&#xF3;n radical del sentido</h3>
+        <p>Las sociedades de baja natalidad comparten una arquitectura mental: <strong>el individuo es el horizonte &#xFA;ltimo de valor.</strong> Si el individuo es el fin de todo, entonces un hijo es, objetivamente, una restricci&#xF3;n. Menos libertad. Menos dinero. Menos opciones. Dentro de esa l&#xF3;gica, no tener hijos es <em>la decisi&#xF3;n m&#xE1;s racional del mundo.</em></p>
+        <p>El problema es que esa l&#xF3;gica es autodestructiva en escala civilizacional. Una sociedad de individuos que optimizan su bienestar personal y no se reproducen... desaparece. No en teor&#xED;a. En matem&#xE1;ticas puras. En dos o tres generaciones.</p>
+
+        <h3 class="c-yellow">El tiempo colapsado al presente</h3>
+        <p>Las culturas de alta natalidad tienen una relaci&#xF3;n con el tiempo que incluye a los muertos y a los no nacidos. El ancestro importa. El nieto importa. Hay un <em>nosotros</em> que se extiende hacia atr&#xE1;s y hacia adelante.</p>
+        <p>Las culturas de baja natalidad han colapsado el tiempo al presente individual. Un hijo es un proyecto de futuro. Si el futuro no existe como categor&#xED;a moral relevante, el hijo tampoco existe como deseo.</p>
+
+        <h3 class="c-red">La eugenesia suave que nadie llama eugenesia</h3>
+        <p>En pa&#xED;ses como Islandia, m&#xE1;s del 99% de los fetos diagnosticados con S&#xED;ndrome de Down son abortados. En Dinamarca: 95%. En Espa&#xF1;a: ~83%. No hay ley que lo obligue. Es una "elecci&#xF3;n personal".</p>
+        <p>Pero cuando el 95% de una poblaci&#xF3;n hace la misma "elecci&#xF3;n personal", ya no es individual. <strong>Es una norma cultural.</strong> Es una definici&#xF3;n impl&#xED;cita de qu&#xE9; vidas merecen ser vividas. Esto tiene un nombre hist&#xF3;rico. Se llam&#xF3; eugenesia.</p>
+
+        <div class="stats-row">
+          <div class="stat-card"><div class="stat-n c-red" data-target="99" data-suffix="%">0</div><div class="stat-label">de fetos con S&#xED;ndrome de Down abortados en Islandia tras diagn&#xF3;stico prenatal</div></div>
+          <div class="stat-card"><div class="stat-n c-red" data-target="95" data-suffix="%">0</div><div class="stat-label">en Dinamarca &#x2014; el pa&#xED;s implement&#xF3; screening universal gratuito en 2004</div></div>
+          <div class="stat-card"><div class="stat-n c-yellow" data-target="83" data-suffix="%">0</div><div class="stat-label">reducci&#xF3;n estimada de nacimientos con S&#xED;ndrome de Down en Espa&#xF1;a</div></div>
+          <div class="stat-card"><div class="stat-n c-cyan" data-target="18" data-suffix="%">0</div><div class="stat-label">crecimiento anual del diagn&#xF3;stico gen&#xE9;tico preimplantacional &#x2014; OMS 2022</div></div>
+        </div>
+
+        <div class="q-block q-yellow">
+          " Los estados m&#xE1;s avanzados del mundo pagan millones para que sus ciudadanos tengan hijos. Los ciudadanos se niegan. No porque no puedan. Sino porque ya no saben para qu&#xE9;. Ese 'para qu&#xE9;' es la variable que ning&#xFA;n economista sabe medir. "
+        </div>
+
+        <h3 class="c-yellow">El Estado de Bienestar como sustituto de la familia</h3>
+        <p>Cuando el Estado provee educaci&#xF3;n, sanidad, pensiones y red de seguridad social, la familia numerosa pierde su funci&#xF3;n utilitaria. Ya no necesitas hijos para que te cuiden cuando seas viejo. Paradoja brutal: <strong>el Estado de Bienestar, al proteger a todos, se destruye a s&#xED; mismo</strong>, porque la natalidad que colapsa vac&#xED;a las arcas de las pensiones futuras. Es un ciclo entr&#xF3;pico perfecto.</p>
       `
     },
     {
       label: 'CAPA 03', labelClass: 'lbl-3',
-      title: 'Quién sí se reproduce y por qué', titleClass: 'c-red',
+      title: 'Lo Que No Vemos: El Suicidio Civilizacional No Hace Ruido', titleClass: 'c-red',
       html: `
-        <p>Hay comunidades que mantienen alta natalidad dentro del mundo moderno. Todas comparten una característica:</p>
-        <div class="q-block q-red">Tienen una respuesta operativa a la pregunta: ¿para qué existimos?</div>
+        <p>Todo organismo vivo tiene como imperativo primario la autoconservaci&#xF3;n y la reproducci&#xF3;n. Es el c&#xF3;digo m&#xE1;s antiguo inscrito en la biolog&#xED;a &#x2014; 3.800 millones de a&#xF1;os de evoluci&#xF3;n.</p>
+        <p>Entonces, &#xBF;c&#xF3;mo se subvierte un instinto de 3.800 millones de a&#xF1;os? <strong>Solo hay una respuesta posible: con una ideolog&#xED;a suficientemente potente.</strong></p>
+
+        <div class="q-block q-red">
+          " Las civilizaciones no mueren por la espada. Mueren por el vac&#xED;o. El suicidio civilizacional no hace ruido. Lo hace con silencios. Con habitaciones vac&#xED;as. Con escuelas que cierran por falta de ni&#xF1;os. Con ciudades que envejecen sin reemplazo. "
+        </div>
+
+        <h3 class="c-red">Las ideolog&#xED;as que subvierten el instinto de vida</h3>
+        <p>Las ideolog&#xED;as que han logrado subvertir el instinto de vida no se presentan como ideolog&#xED;as. Se presentan como ciencia: <em>"el planeta est&#xE1; superpoblado"</em>. Como libertad: <em>"mi cuerpo, mi decisi&#xF3;n"</em>. Como compasi&#xF3;n: <em>"no traer sufrimiento al mundo"</em>. Como progreso: <em>"las mujeres realizadas no necesitan hijos"</em>. Cada formulaci&#xF3;n contiene una verdad parcial. Y es exactamente esa mezcla de verdad y error lo que las hace tan efectivas.</p>
+        <p>La superpoblaci&#xF3;n es un mito estad&#xED;stico: toda la poblaci&#xF3;n mundial cabe en el estado de Texas con densidad menor a la de Par&#xED;s. La compasi&#xF3;n desconectada del valor intr&#xED;nseco de la vida se convierte en su opuesto: <strong>la decisi&#xF3;n de qui&#xE9;n merece existir.</strong></p>
+
+        <h3 class="c-cyan">Lo que las civilizaciones vivas saben</h3>
+        <p>Hay algo que comparten el campesino del Sahel, la madre ultraortodoxa en Bnei Brak, la familia Amish en Pennsylvania y el matrimonio israel&#xED; en el N&#xE9;guev: <strong>saben que son un eslab&#xF3;n. No el principio ni el fin de la cadena.</strong></p>
+
         <table class="two-col">
-          <tr><th>Comunidad</th><th>Tasa de fertilidad</th></tr>
-          <tr><td>Amish (EE.UU.)</td><td>6–7</td></tr>
-          <tr><td>Ultraortodoxos (Israel)</td><td>6–8</td></tr>
-          <tr><td>Níger</td><td>6.8</td></tr>
-          <tr><td>Media Unión Europea</td><td>1.46</td></tr>
-          <tr><td>Japón</td><td>1.20</td></tr>
-          <tr><td>Corea del Sur</td><td>0.72</td></tr>
+          <tr><th>&#x2193; Civilizaciones en declive</th><th>&#x2191; Civilizaciones que persisten</th></tr>
+          <tr><td>El individuo como horizonte de valor</td><td>El <em>nosotros</em> como unidad m&#xED;nima de sentido</td></tr>
+          <tr><td>El tiempo colapsado al presente</td><td>El tiempo como continuum ancestro-descendiente</td></tr>
+          <tr><td>El hijo como costo y restricci&#xF3;n</td><td>El hijo como proyecto de futuro y continuaci&#xF3;n</td></tr>
+          <tr><td>El Estado como sustituto de la familia</td><td>La familia como red de sentido irreemplazable</td></tr>
+          <tr><td>La compasi&#xF3;n como raz&#xF3;n para no nacer</td><td>La vida como bien intr&#xED;nseco, no instrumental</td></tr>
         </table>
-        <p>El factor diferencial no es económico. Es la existencia de un marco de sentido que trasciende al individuo.</p>
-      `
-    },
-    {
-      label: 'CAPA 04', labelClass: 'lbl-2',
-      title: 'El colapso como elección sistémica', titleClass: 'c-yellow',
-      html: `
-        <p>Las sociedades con colapso demográfico no están siendo destruidas desde fuera. Están tomando, de forma difusa y colectiva, la decisión de no continuar.</p>
-        <p>Los mecanismos estructurales:</p>
-        <ul>
-          <li>Sistemas educativos que retrasan la independencia hasta los 30 años</li>
-          <li>Mercados inmobiliarios que hacen la familia económicamente inaccesible</li>
-          <li>Culturas que penalizan socialmente la maternidad temprana</li>
-          <li>Estados de bienestar que sustituyen la función económica de los hijos</li>
-        </ul>
-        <div class="q-block q-yellow">"No es que no quieran hijos. Es que el sistema hace que tenerlos sea una decisión económicamente irracional."</div>
-      `
-    },
-    {
-      label: 'CAPA 05', labelClass: 'lbl-1',
-      title: 'Lo que viene cuando nadie viene', titleClass: 'c-cyan',
-      html: `
-        <p>Una sociedad que no se reproduce no desaparece de golpe. Se contrae durante generaciones, en silencio:</p>
-        <ul>
-          <li>Escuelas que cierran por falta de alumnos</li>
-          <li>Ciudades que encogen desde los barrios periféricos hacia adentro</li>
-          <li>Sistemas de pensiones que colapsan por insuficiencia de cotizantes</li>
-          <li>Culturas que dejan de transmitirse porque no hay quién las reciba</li>
-        </ul>
-        <p>El suicidio civilizacional no es un evento. Es un proceso lento, silencioso y estadísticamente inevitable si no se invierte la tendencia.</p>
-        <div class="q-block q-red">"Las civilizaciones no mueren con ruido. Mueren con aulas vacías y casas que nadie hereda."</div>
+
+        <h3 class="c-red">El veredicto: es contra natura &#x2014; y es ideol&#xF3;gico</h3>
+        <p><strong>El nihilismo tiene costos demogr&#xE1;ficos medibles.</strong> Cuando una cultura ya no puede responder "&#xBF;para qu&#xE9; vivir?", tampoco puede responder "&#xBF;para qu&#xE9; tener hijos?". Israel nos muestra el ant&#xED;doto, parad&#xF3;jicamente en la naci&#xF3;n m&#xE1;s amenazada del mundo: la vida se defiende vivi&#xE9;ndola hacia adelante.</p>
+
+        <div class="q-block q-red">
+          " La pregunta que define si una civilizaci&#xF3;n est&#xE1; viva o muri&#xE9;ndose no es t&#xE9;cnica. Es: &#xBF;quieren sus miembros que haya futuro? &#xBF;Apuestan con sus cuerpos y su tiempo porque algo de lo que son merece continuar? La respuesta no se vota. Se nace. "
+        </div>
       `
     }
   ]
 }
+
 
 ];
 
@@ -1229,9 +1307,54 @@ const REFS_INV3 = `<div id="refs-block-3" class="refs-section">
   </div>
 </div>`;
 
+const REFS_INV4 = `<div id="refs-block-4" class="refs-section">
+  <div class="refs-toggle" onclick="toggleRefs(4)" style="cursor:pointer;margin-top:2rem;padding:1rem 0;border-top:1px solid var(--dgray);display:flex;align-items:center;justify-content:space-between;">
+    <span style="font-family:Space Mono,monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)">&#x203A; Fuentes y referencias (29)</span>
+    <span id="refs-arrow-4" style="color:rgba(255,255,255,0.65);font-size:.8rem">&#x25BC;</span>
+  </div>
+  <div id="refs-content-4" style="display:none">
+<div style="margin-top:1.8rem;font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.12em;color:rgba(255,255,255,0.65);margin-bottom:1rem;text-transform:uppercase;">DEMOGRAF&#xCD;A &#x2014; DATOS PRIMARIOS</div>
+<div class="ref-row"><span class="ref-num c-cyan">01</span><div class="ref-body"><div class="ref-src">UN World Population Prospects 2024 &#xB7; Naciones Unidas</div><div class="ref-quote">TFT por pa&#xED;s. Corea del Sur: 0.72 (2023), el valor m&#xE1;s bajo jam&#xE1;s registrado sin guerra, hambruna o plaga.</div><a href="https://population.un.org/wpp/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://population.un.org/wpp/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">02</span><div class="ref-body"><div class="ref-src">Statistics Korea (&#xD1B5;&#xACC4;&#xCCAD;) &#x2014; 2023 Birth Statistics</div><div class="ref-quote">TFT Seoul: 0.55. Inversi&#xF3;n de m&#xE1;s de 280.000M$ desde 2006 sin resultado positivo.</div><a href="https://www.kedglobal.com/economy/newsView/ked202402280010" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.kedglobal.com/economy/newsView/ked202402280010</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">03</span><div class="ref-body"><div class="ref-src">Israel Central Bureau of Statistics &#x2014; 2023</div><div class="ref-quote">TFT Israel: 2.90. Jud&#xED;os ultraortodoxos (Haredim): 6.6 hijos/mujer.</div><a href="https://www.cbs.gov.il/en/pages/default.aspx" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.cbs.gov.il/en/pages/default.aspx</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">04</span><div class="ref-body"><div class="ref-src">Eurostat &#x2014; Fertility Statistics 2024</div><div class="ref-quote">Espa&#xF1;a: 1.10, segunda tasa m&#xE1;s baja de la UE. Promedio UE-27: 1.34.</div><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Fertility_statistics" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Fer&#x2026;</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">05</span><div class="ref-body"><div class="ref-src">Amish Population Profile 2024 &#xB7; Young Center for Anabaptist Studies</div><div class="ref-quote">~400.000 personas, duplic&#xE1;ndose cada 20 a&#xF1;os. Sin subsidios estatales.</div><a href="https://groups.etown.edu/amishstudies/amish-population-profile-2024/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://groups.etown.edu/amishstudies/amish-population-profile-2024/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">06</span><div class="ref-body"><div class="ref-src">Pew Research Center &#x2014; "Mormons in America" (2012, actualizado 2023)</div><div class="ref-quote">TFT mormones practicantes: 3.3, la m&#xE1;s alta de cualquier grupo religioso en EE.UU.</div><a href="https://www.pewresearch.org/religion/2012/01/12/mormons-in-america-executive-summary/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.pewresearch.org/religion/2012/01/12/mormons-in-america-exe&#x2026;</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">07</span><div class="ref-body"><div class="ref-src">Japan Ministry of Health &#x2014; 2023 Demographic Survey</div><div class="ref-quote">Jap&#xF3;n vende m&#xE1;s pa&#xF1;ales para adultos que para beb&#xE9;s desde 2011.</div><a href="https://www.mhlw.go.jp/english/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.mhlw.go.jp/english/</a></div></div>
+<div style="margin-top:1.8rem;font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.12em;color:rgba(255,255,255,0.65);margin-bottom:1rem;text-transform:uppercase;">PSICOLOG&#xCD;A SOCIAL &#x2014; NIHILISMO DEMOGR&#xC1;FICO</div>
+<div class="ref-row"><span class="ref-num c-cyan">08</span><div class="ref-body"><div class="ref-src">Korea Institute for Health and Social Affairs &#x2014; 2023</div><div class="ref-quote">El 42.3% de los coreanos menores de 34 no quiere hijos. Raz&#xF3;n principal (68%): 'este mundo no es un lugar donde valga la pena traer a alguien'.</div><a href="https://www.kihasa.re.kr/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.kihasa.re.kr/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">09</span><div class="ref-body"><div class="ref-src">Kim S., Lee J. &#x2014; Korean Economic Review (2022)</div><div class="ref-quote">La 'generaci&#xF3;n sampo' renuncia a relaciones, matrimonio, hijos, empleo estable y esperanza. Sin correlaci&#xF3;n directa con renta per c&#xE1;pita.</div><a href="https://www.kea.ne.kr/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.kea.ne.kr/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">10</span><div class="ref-body"><div class="ref-src">OECD Family Database 2024</div><div class="ref-quote">280.000M$ invertidos en Corea (2006-2023). El gasto m&#xE1;s alto del mundo produce el resultado m&#xE1;s bajo del mundo.</div><a href="https://www.oecd.org/en/topics/family.html" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.oecd.org/en/topics/family.html</a></div></div>
+<div style="margin-top:1.8rem;font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.12em;color:rgba(255,255,255,0.65);margin-bottom:1rem;text-transform:uppercase;">EUGENESIA SUAVE Y SELECCI&#xD3;N PRENATAL</div>
+<div class="ref-row"><span class="ref-num c-cyan">11</span><div class="ref-body"><div class="ref-src">Estimation of people with Down syndrome in Europe &#xB7; PMC (2020)</div><div class="ref-quote">Islandia: ~99% de fetos con S&#xED;ndrome de Down abortados. Dinamarca: 95%. Espa&#xF1;a: reducci&#xF3;n estimada del 83%.</div><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7940428/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://pmc.ncbi.nlm.nih.gov/articles/PMC7940428/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">12</span><div class="ref-body"><div class="ref-src">Savulescu J. &#x2014; "Procreative Beneficence" &#xB7; Bioethics (2001)</div><div class="ref-quote">La bio&#xE9;tica mainstream establece la obligaci&#xF3;n moral de seleccionar el embri&#xF3;n m&#xE1;s sano.</div><a href="https://doi.org/10.1111/1467-8519.00251" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://doi.org/10.1111/1467-8519.00251</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">13</span><div class="ref-body"><div class="ref-src">WHO &#x2014; "Preimplantation Genetic Testing" &#xB7; Global Report 2022</div><div class="ref-quote">El diagn&#xF3;stico gen&#xE9;tico preimplantacional crece un 18% anual.</div><a href="https://www.who.int/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.who.int/</a></div></div>
+<div style="margin-top:1.8rem;font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.12em;color:rgba(255,255,255,0.65);margin-bottom:1rem;text-transform:uppercase;">TEOR&#xCD;A CIVILIZATORIA Y FILOSOF&#xCD;A</div>
+<div class="ref-row"><span class="ref-num c-cyan">14</span><div class="ref-body"><div class="ref-src">Oswald Spengler &#x2014; "Der Untergang des Abendlandes" (1918-1922)</div><div class="ref-quote">Identific&#xF3; en la fase terminal de cada civilizaci&#xF3;n el mismo rasgo: la poblaci&#xF3;n deja de tener hijos porque ya no ve el sentido.</div><a href="https://archive.org/details/DerUntergangDesAbendlandes" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://archive.org/details/DerUntergangDesAbendlandes</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">15</span><div class="ref-body"><div class="ref-src">Arnold Toynbee &#x2014; "A Study of History" (1934-1961)</div><div class="ref-quote">Las civilizaciones no son destruidas por fuerzas externas sino por suicidio.</div><a href="https://archive.org/details/studyofhistory0112toyn" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://archive.org/details/studyofhistory0112toyn</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">16</span><div class="ref-body"><div class="ref-src">Philip Longman &#x2014; "The Empty Cradle" (Basic Books, 2004)</div><div class="ref-quote">'Las especies que dejan de reproducirse no son eliminadas &#x2014; simplemente desaparecen.'</div><a href="https://www.basicbooks.com/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.basicbooks.com/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">17</span><div class="ref-body"><div class="ref-src">Eric Kaufmann &#x2014; "Shall the Religious Inherit the Earth?" (2010)</div><div class="ref-quote">La correlaci&#xF3;n fe/fertilidad es robusta en todos los continentes y grupos religiosos.</div><a href="https://www.profilebooks.com/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.profilebooks.com/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">18</span><div class="ref-body"><div class="ref-src">Jonathan Last &#x2014; "What to Expect When No One's Expecting" (2013)</div><div class="ref-quote">Cuando la TFT cae bajo 2.1, no hay pol&#xED;tica p&#xFA;blica que lo revierta.</div><a href="https://www.encounterbooks.com/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.encounterbooks.com/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">19</span><div class="ref-body"><div class="ref-src">Byung-Chul Han &#x2014; "La sociedad del cansancio" (2010)</div><div class="ref-quote">La l&#xF3;gica del achievement-subject no tiene margen estructural para el cuidado de dependientes.</div><a href="https://www.herdereditorial.com/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.herdereditorial.com/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">20</span><div class="ref-body"><div class="ref-src">Niall Ferguson &#x2014; "Civilization: The West and the Rest" (2011)</div><div class="ref-quote">'Una civilizaci&#xF3;n que no produce suficientes hijos para reemplazarse est&#xE1; votando con su &#xFA;tero por su propia extinci&#xF3;n.'</div><a href="https://www.penguin.co.uk/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.penguin.co.uk/</a></div></div>
+<div style="margin-top:1.8rem;font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.12em;color:rgba(255,255,255,0.65);margin-bottom:1rem;text-transform:uppercase;">ESTADO DE BIENESTAR Y PARADOJA DEMOGR&#xC1;FICA</div>
+<div class="ref-row"><span class="ref-num c-cyan">21</span><div class="ref-body"><div class="ref-src">Caldwell J.C. &#x2014; "Theory of Fertility Decline" (Academic Press, 1982)</div><div class="ref-quote">Cuando el Estado reemplaza la funci&#xF3;n de la familia extensa, los hijos pierden su valor econ&#xF3;mico.</div><a href="https://www.sciencedirect.com/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.sciencedirect.com/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">22</span><div class="ref-body"><div class="ref-src">Demeny P. &#x2014; "Population and the Invisible Hand" &#xB7; Demography (1986)</div><div class="ref-quote">El Estado de Bienestar elimina los incentivos privados de la reproducci&#xF3;n pero necesita poblaci&#xF3;n futura para financiarse.</div><a href="https://www.jstor.org/stable/2061482" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.jstor.org/stable/2061482</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">23</span><div class="ref-body"><div class="ref-src">IMF Working Paper &#x2014; "The Macroeconomics of Population Aging" (2022)</div><div class="ref-quote">Una TFT de 1.5 durante 100 a&#xF1;os reduce la poblaci&#xF3;n a un tercio.</div><a href="https://www.imf.org/en/Publications/WP" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.imf.org/en/Publications/WP</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">24</span><div class="ref-body"><div class="ref-src">Rindfuss R., Guzzo K. &#x2014; "Childbearing and Societal Context" &#xB7; Demography (2021)</div><div class="ref-quote">El individualismo radical es el predictor m&#xE1;s fuerte de baja fertilidad, por encima de renta, urbanizaci&#xF3;n o educaci&#xF3;n.</div><a href="https://doi.org/10.1215/00703370-9164660" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://doi.org/10.1215/00703370-9164660</a></div></div>
+<div style="margin-top:1.8rem;font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.12em;color:rgba(255,255,255,0.65);margin-bottom:1rem;text-transform:uppercase;">ISRAEL Y RESILIENCIA DEMOGR&#xC1;FICA</div>
+<div class="ref-row"><span class="ref-num c-cyan">25</span><div class="ref-body"><div class="ref-src">IDC Herzliya Studies &#x2014; Arian &amp; Shamir</div><div class="ref-quote">Tel Aviv secular tiene TFT ~2.5, la m&#xE1;s alta de cualquier ciudad occidental secular.</div><a href="https://www.idc.ac.il/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.idc.ac.il/</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">26</span><div class="ref-body"><div class="ref-src">Della Pergola S. &#x2014; "Jewish Demography 2023" &#xB7; Hebrew University Jerusalem</div><div class="ref-quote">De 6M tras el Holocausto a 16.1M en 2023. La recuperaci&#xF3;n demogr&#xE1;fica como acto colectivo de resistencia existencial.</div><a href="https://huji.academia.edu/SergioDellaPergolaHUJI" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://huji.academia.edu/SergioDellaPergolaHUJI</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">27</span><div class="ref-body"><div class="ref-src">Hazan M., Zoabi H. &#x2014; Review of Economic Studies (2015)</div><div class="ref-quote">En Israel, mayor educaci&#xF3;n femenina correlaciona positivamente con fertilidad, invirtiendo el patr&#xF3;n occidental.</div><a href="https://doi.org/10.1093/restud/rdv005" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://doi.org/10.1093/restud/rdv005</a></div></div>
+<div style="margin-top:1.8rem;font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.12em;color:rgba(255,255,255,0.65);margin-bottom:1rem;text-transform:uppercase;">BIOLOG&#xCD;A EVOLUTIVA</div>
+<div class="ref-row"><span class="ref-num c-cyan">28</span><div class="ref-body"><div class="ref-src">Dawkins R. &#x2014; "The Selfish Gene" (Oxford UP, 1976)</div><div class="ref-quote">El imperativo reproductivo es la instrucci&#xF3;n m&#xE1;s profunda de 3.800M de a&#xF1;os de evoluci&#xF3;n.</div><a href="https://global.oup.com/academic/product/the-selfish-gene-9780198788607" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://global.oup.com/academic/product/the-selfish-gene-97801987886&#x2026;</a></div></div>
+<div class="ref-row"><span class="ref-num c-cyan">29</span><div class="ref-body"><div class="ref-src">Lumsden C.J., Wilson E.O. &#x2014; "Genes, Mind, and Culture" (Harvard UP, 1981)</div><div class="ref-quote">La coevoluci&#xF3;n gen-cultura puede modificar comportamientos reproductivos en pocas generaciones.</div><a href="https://www.hup.harvard.edu/" target="_blank" rel="noopener" style="font-size:.52rem;color:var(--cyan);text-decoration:none;opacity:.7;display:block;margin-top:.15rem;word-break:break-all;">https://www.hup.harvard.edu/</a></div></div>
+  </div>
+</div>`;
+
 function renderRefs() {
   const c = document.getElementById('refs-container');
-  const map = [REFS_INV0, REFS_INV1, REFS_INV2, REFS_INV3];
+  const map = [REFS_INV0, REFS_INV1, REFS_INV2, REFS_INV3, REFS_INV4];
   c.innerHTML = map[curInv] || '';
   const content = document.getElementById(`refs-content-${curInv}`);
   if (content) content.style.display = 'none';
