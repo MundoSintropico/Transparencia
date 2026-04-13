@@ -1414,15 +1414,18 @@ function toggleRefs(id) {
 // ── SHARE ─────────────────────────────────────────────
 function shareX() {
   const inv = investigations[curInv];
-  const u = encodeURIComponent(location.href);
-  const t = encodeURIComponent(`"${inv.title}" — Lo Que No Ves. Investigación sin filtros.`);
+  const invUrl = `https://mundosintropico.github.io/inv-${curInv + 1}`;
+  const u = encodeURIComponent(invUrl);
+  const t = encodeURIComponent(`"${inv.title}" — Mundo Sintrópico. Lo que no ves.`);
   window.open(`https://twitter.com/intent/tweet?text=${t}&url=${u}`, '_blank');
 }
 function shareTG() {
-  window.open(`https://t.me/share/url?url=${encodeURIComponent(location.href)}`, '_blank');
+  const invUrl = `https://mundosintropico.github.io/inv-${curInv + 1}`;
+  window.open(`https://t.me/share/url?url=${encodeURIComponent(invUrl)}`, '_blank');
 }
 function copyLink() {
-  navigator.clipboard.writeText(location.href).then(() => {
+  const invUrl = `https://mundosintropico.github.io/inv-${curInv + 1}`;
+  navigator.clipboard.writeText(invUrl).then(() => {
     const b = document.getElementById('copy-btn');
     const orig = b.textContent;
     b.textContent = '✓ Copiado'; b.classList.add('ok');
